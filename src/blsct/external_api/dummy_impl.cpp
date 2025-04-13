@@ -477,9 +477,7 @@ struct Logger {
     void LogPrintStr(const std::string& str, const std::string& logging_function, const std::string& source_file, int source_line, BCLog::LogFlags category, BCLog::Level level);
     bool WillLogCategoryLevel(LogFlags category, Level level) const;
 };
-
 void Logger::LogPrintStr(const std::string& str, const std::string& logging_function, const std::string& source_file, int source_line, BCLog::LogFlags category, BCLog::Level level) NOT_IMPL
-
 bool Logger::WillLogCategoryLevel(LogFlags, Level) const NOT_IMPL
 
 } // namespace BCLog
@@ -540,7 +538,6 @@ struct CBlockHeader {
 uint256 CBlockHeader::GetHash() const NOT_IMPL
 
 const CBaseChainParams& BaseParams() NOT_IMPL
-
 const CChainParams& Params() NOT_IMPL
 
 namespace common {
@@ -576,9 +573,7 @@ struct SettingsSpan {
 };
 
 SettingsSpan::SettingsSpan(const std::vector<UniValue>&) NOT_IMPL
-
 bool SettingsSpan::empty() const NOT_IMPL
-
 void SettingsSpan::begin() const NOT_IMPL
 
 } // namespace common
